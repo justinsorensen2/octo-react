@@ -1,5 +1,6 @@
 :root {
   font: 16px / 1 sans-serif;
+  background-color: rgb(255, 255, 255);
 }
 
 html {
@@ -7,6 +8,130 @@ html {
 }
 
 body {
+  background-color: rgb(255, 255, 255);
   margin: 0;
   min-height: 100%;
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+  backface-visibility: visible;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  list-style: none;
+  align-items: center;
+}
+
+header, a {
+  text-decoration: none;
+}
+
+.TopLeft {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  padding-right: 0.5rem;
+}
+
+.TopRight {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  text-align: center;
+}
+
+nav {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+}
+
+ul1 {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul2 {
+  list-style: none;
+  display: flex;
+}
+
+main {
+  list-style: none;
+  justify-content: center;
+  text-align: left;
+  padding: 16;
+  margin: 0;
+  margin-bottom: 40;
+}
+
+.CatItem {
+  padding-left: 2rem;
+  width: 21.7rem;
+  height: 21.7rem;
+  margin-bottom: 3rem;
+}
+
+.Cats {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+img {
+  width: 21.625rem;
+  height: 21.603rem;
+  padding: 8;
+  border-radius: 25px;
+  border: 1px solid rgb(184, 184, 184);
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  max-width: 21rem;
+}
+
+summary img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+@media (min-width: 800px) {
+  .Cats {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .CatItem {
+    padding-left: 0;
+    width: 21.7rem;
+    height: 100%;
+    margin-bottom: 1rem;
+  }
+  .TopLeft {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    align-items: left;
+    text-align: center;
+    padding-right: 0.5rem;
+  }
 }
