@@ -9,7 +9,11 @@ export class CatItem extends Component {
           <img src={this.props.catUrl} alt={this.props.catAlttext} />
         </a>
         <summary>
-          <strong>{this.props.catName}</strong>
+          <strong>
+            <span>{this.props.catNumber}</span>
+            {this.props.catName}
+          </strong>
+
           <img src={Cardicon} alt="Small Github Octocat Icon" />
         </summary>
       </li>

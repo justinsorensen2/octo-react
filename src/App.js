@@ -12,11 +12,11 @@ class App extends React.Component {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <title>Octodex</title>
           <link rel="shortcut icon" href={GitIcoSm} />
-          <link rel="stylesheet" href="/screen.css" />
+          <link rel="stylesheet" href="./index.css" />
         </head>
         <body>
           <header>
-            <nav>
+            <nav class="TLNav">
               <ul class="TopLeft">
                 <li>
                   <embed src={GitIcoLg}></embed>
@@ -31,6 +31,8 @@ class App extends React.Component {
                   <a href="https://octodex.github.com/faq/">FAQ</a>
                 </li>
               </ul>
+            </nav>
+            <nav class="TRNav">
               <ul class="TopRight">
                 <li>
                   <a href="https://twitter.com/githubdesign">

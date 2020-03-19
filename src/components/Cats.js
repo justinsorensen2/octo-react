@@ -15,30 +15,35 @@ export class Cats extends Component {
         url: Linktocat,
         alttext: 'Octocat Link',
         link: 'https://octodex.github.com/linktocat/',
+        number: '#59:',
       },
       {
         name: 'Daftpunktocat',
         url: Daftpunktocat,
         alttext: 'Octocat DaftPunk, you know, with the helmet',
         link: 'https://octodex.github.com/daftpunktocat-thomas/',
+        number: '#101:',
       },
       {
         name: 'Maxtocat',
         url: Maxtocat,
         alttext: 'Octocat Max - from the Grinch',
         link: 'https://octodex.github.com/maxtocat/',
+        number: '#109:',
       },
       {
         name: 'Megacat',
         url: Megacat,
         alttext: 'Octocat Megaman',
         link: 'https://octodex.github.com/megacat/',
+        number: '#60:',
       },
       {
         name: 'Trekkie',
         url: Trekkie,
         alttext: 'Octocat Geordi Laforge',
         link: 'https://octodex.github.com/trekkie/',
+        number: '#16:',
       },
 
       {
@@ -46,6 +51,7 @@ export class Cats extends Component {
         url: Xtocat,
         alttext: 'Octocat Wolverine',
         link: 'https://octodex.github.com/xtocat/',
+        number: '#35:',
       },
     ]
     return (
@@ -57,6 +63,7 @@ export class Cats extends Component {
               catUrl={cat.url}
               catAlttext={cat.alttext}
               catLink={cat.link}
+              catNumber={cat.number}
             />
           )
         })}
